@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Keycode Logger in Vanilla JS</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's That Key</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="main">
-	<p class="intro">Your keycode is...</p>
-	<p class="tag"></p>
-	<p class="help-text">Press another key to retrive the keycode</p>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./script.js"></script>
+  <div class="main">
+    <h1 class="heading">What's That Key?</h1>
+    <p>Press any key to get the JavaScript event keycode</p>
+    <div class="keycodes">
+      <div class="keycode keycode--key">
+        <span class="keycode__heading">event.key</span>
+        <p class="tag"></p>
+      </div>
+      <div class="keycode keycode--location">
+        <span class="keycode__heading">event.location</span>
+        <p class="tag tag--location"></p>
+      </div>
+      <div class="keycode keycode--code">
+        <span class="keycode__heading">event.code</span>
+        <p class="tag tag--code"></p>
+      </div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
