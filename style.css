@@ -23,7 +23,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 26px;
+	line-height: 54px;
 	text-align: center;
 	border: 5px solid #151515;
 	padding: 30px 60px;
@@ -39,7 +39,6 @@ body {
 	max-width: 700px;
 	padding: 80px 20px;
 }
-
 
 .keycode {
 	display: -webkit-box;
@@ -58,4 +57,20 @@ body {
 	padding-bottom: 15px;
 	width: 100%;
 	text-align: center;
+}
+
+@media (max-width: 746px) {
+
+	.main {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.keycodes {
+		flex-direction: column;
+	}
+
+	.keycode {
+		margin: 0 auto 30px;
+	}
 }
